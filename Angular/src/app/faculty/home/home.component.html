@@ -1,0 +1,82 @@
+<app-navigation></app-navigation>
+<div class="container subjectContainer">
+  <div class="row justify-content-end subjectRow" *ngFor="let i of subjectDetails">
+    <div class="col-md-4 subjectCol">
+      <span class="courseId">{{i[0]}}</span> <br> <span class="courseName">{{i[1]}}</span>
+    </div>
+    <div class="col-md-6 subjectCol">
+      <button type="button" class="btn btn-danger btn-md facultyChoice" data-toggle="modal" data-target="#myModal"
+        (click)="clickAttendanceShortage({'facultyId':facultyId,'courseId':i[0]})" style="float: left;">
+        Attendance Shortage
+      </button>
+      <div class="dropdown" style="float: left; margin-left:10px;">
+        <button class="btn btn-secondary dropdown-toggle facultyChoice" type="button" data-toggle="dropdown">Attendance
+          <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a (click)="clickMark({'facultyId':facultyId,'courseId':i[0],'courseName':i[1]})"
+              class="dropdown-item attendanceDropdown">Mark</a></li>
+          <li class="divider"></li>
+          <li><a (click)="clickDelUpd({'facultyId':facultyId,'courseId':i[0],'courseName':i[1]})"
+              class="dropdown-item attendanceDropdown">Update/Delete</a></li>
+          <li class="divider"></li>
+          <li><a (click)="clickViewAtt({'facultyId':facultyId,'courseId':i[0],'courseName':i[1]})"
+              class="dropdown-item attendanceDropdown">View</a></li>
+        </ul>
+      </div>
+
+      <!-- Modal For Attendance Shortage BEGIN-->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header bg-danger">
+              <h4 class="modal-title">{{attendanceShortageDetails.courseId}} - Attendance Shortage</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="container" *ngIf="noAttendanceShortage">
+                <h5>No students with Attendance Shortage</h5>
+              </div>
+              <div class="container" *ngIf="!noAttendanceShortage">
+                <div class="row justify-content-center text-center showDetailsTitle">
+                  <div class="col-md-3">
+                    Roll No
+                  </div>
+                  <div class="col-md-4">
+                    Name
+                  </div>
+                  <div class="col-md-3">
+                    Percentage
+                  </div>
+                </div>
+                <div class="row justify-content-center text-center showDetailsData"
+                  *ngFor="let i of attendanceShortageDetails.studentDetails">
+                  <div class="col-md-3">
+                    {{i[0]}}
+                  </div>
+                  <div class="col-md-4">
+                    {{i[1]}}
+                  </div>
+                  <div class="col-md-3">
+                    {{i[2]}}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Modal For Attendance Shortage END-->
+
+    </div>
+  </div>
+</div>

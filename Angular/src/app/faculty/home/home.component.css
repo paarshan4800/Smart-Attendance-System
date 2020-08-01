@@ -1,0 +1,56 @@
+/* .subjectCol,.col-md-6{
+    background-color: grey;
+} */
+.subjectRow {
+    background-color: white;
+    margin-top: 2%;
+    border-radius: 1%;
+  }
+  
+  .subjectCol {
+    padding: 15px;
+  }
+
+/* .subjectContainer {
+    padding-bottom: 15%;
+    color: black;
+} */
+
+.courseId{
+    font-family: OswaldMedium;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 150%;
+}
+
+.courseName,.details{
+    font-family: CabinRegular;
+    font-weight: bolder;
+}
+
+.facultyChoice{
+    font-family: CabinRegular;
+}
+
+.attendanceDropdown:hover {
+    background-color: grey;
+}
+
+.showDetails {
+    padding: 1% 0%;
+  }
+  
+  .showDetailsTitle {
+    font-family: OswaldMedium;
+    font-size: larger;
+    padding: 1% 0%;
+    background-color: black;
+    color: white;
+  }
+  
+  .showDetailsData {
+    font-family: OswalsRegular;
+    font-size: large;
+    padding: 1% 0%;
+    background-color: #e6e6e6;
+  }

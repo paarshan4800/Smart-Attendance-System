@@ -1,0 +1,19 @@
+.detailsContainer {
+    font-family: CabinRegular;
+    font-size: 110%;
+  }
+  
+  .tableHeading {
+    background-color: grey;
+    color: black;
+  }
+  
+  .tableData {
+    background-color: white;
+  }
+  
+  
+  tr {
+    padding: 10%;
+  }
+  

@@ -1,0 +1,26 @@
+<div class="container-fluid sticky-top">
+  <nav class="navbar navbar-expand-md d-flex justify-content-center bg-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a [routerLink]="['../../../faculty/home',facultyId]" routerLinkActive="router-link-active"
+          class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['../../../faculty/view',facultyId]" routerLinkActive="router-link-active"
+          class="nav-link">Details</a>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <a type="button" class="btn btn-dark dropdown-toggle nav-link" data-toggle="dropdown">
+            {{facultyId}}
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item signoutItem" [routerLink]="['../../../']"
+                routerLinkActive="router-link-active" (click)="SignOut()">Sign
+                Out</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>

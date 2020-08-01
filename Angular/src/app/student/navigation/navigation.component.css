@@ -1,0 +1,35 @@
+.nav-item {
+    margin: 0% 5%;
+}
+
+a {
+    font-family: Anton;
+    font-size: larger;
+}
+
+.router-link-active {
+    background-color: #e6e6e6;
+    color: black !important;
+    border-radius: 5%;
+}
+
+.nav-link {
+    color: honeydew;
+    letter-spacing: 0.5px;
+}
+
+
+.nav-link:hover {
+    color: black;
+    background-color: #e6e6e6;
+    border-radius: 5%;
+}
+
+.dropdown-menu {
+    color: black !important;
+}
+
+.dropdown-item:hover {
+    background-color: #343A40;
+    color: black !important;
+}

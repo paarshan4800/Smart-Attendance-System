@@ -1,0 +1,9 @@
+.container {
+    color:#e6e6e6;
+    font-size: 200%;
+    font-family: Anton;
+}
+
+a:hover{
+    pointer-events: visible;
+}

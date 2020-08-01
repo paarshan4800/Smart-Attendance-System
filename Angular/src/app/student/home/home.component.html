@@ -1,0 +1,17 @@
+<app-navigation></app-navigation>
+<div class="container subjectContainer">
+  <div class="row  justify-content-center subjectRow" *ngFor="let i of attendanceDetails">
+    <div class="col-md-4 subjectCol">
+      <span class="courseId">{{i[0]}}</span> <br> <span class="courseName">{{i[1]}}</span>
+    </div>
+    <div class="col-md-6 subjectCol">
+      <span class="details">Present: {{i[2]}}
+        Absent: {{i[3]}}</span>
+      <div class="progress">
+        <div class="progress-bar bg-success" [class.attendanceShortage]="i[6]" style="width:{{i[4]}}%">{{i[4]}}%
+        </div>
+      </div>
+      <span class="details">{{i[5]}}</span>
+    </div>
+  </div>
+</div>

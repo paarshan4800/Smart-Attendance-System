@@ -1,0 +1,38 @@
+/* .col-md-4,.col-md-6{
+    background-color: grey;
+} */
+.subjectRow {
+  background-color: white;
+  margin-top: 2%;
+  border-radius: 1%;
+}
+
+.subjectCol {
+  padding: 10px;
+}
+
+/* .subjectContainer {
+    margin-bottom: 10%;
+    color: black;
+} */
+
+.progress {
+  margin: 5px 0px;
+}
+
+.courseId {
+  font-family: OswaldMedium;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 150%;
+}
+
+.courseName,
+.details {
+  font-family: CabinRegular;
+  font-weight: bolder;
+}
+
+.attendanceShortage {
+  background-color: red !important;
+}

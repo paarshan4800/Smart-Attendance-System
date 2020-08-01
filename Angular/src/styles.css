@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face{
+    font-family: Anton;
+    src: url(./assets/fonts/Anton-Regular.ttf);
+}
+
+@font-face{
+    font-family: OswaldMedium;
+    src: url(./assets/fonts/Oswald/Oswald-Medium.ttf);
+}
+
+@font-face{
+    font-family: OswalsRegular;
+    src: url(./assets/fonts/Oswald/Oswald-Regular.ttf);
+}
+
+@font-face{
+    font-family: CabinRegular;
+    src: url(./assets/fonts/Cabin/Cabin-Regular.ttf);
+}
+.welcomeText {
+    font-family: Anton;
+    font-size: xx-large;
+    color: honeydew;
+}
+
+.bi-check-square {
+    color: green;
+}
+
+.bi-x-square {
+    color: red;
+}
+
+html,body {
+    /* background-image: url(./assets/images/ceg_bg.png); */
+    background-color: #e6e6e6;
+    height: 100%; 
+    margin: 0;
+  
+}
+
+.primaryColor{
+    color:honeydew;
+}
+
+.primaryBColor{
+    background-color:honeydew;
+}
+
+.warningText {
+    font-family: Anton;
+}

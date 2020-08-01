@@ -1,0 +1,39 @@
+<div style="min-height: 100%;" class=" bgImg container-fluid d-flex align-items-center text-center">
+  <div class="container">
+    <div class="row justify-content-center signinRow">
+      <div class="col-md-6 col-sm-12 welcomeText">
+        <span>Welcome to CEG Smart Attendance System</span>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="{{StudentImgSrc}}" width="75%" alt="" (mouseover)="StudentImgMouseOver()"
+          (mouseout)="StudentImgMouseOut()" (click)="clickStudentImg()">
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <img src="{{FacultyImgSrc}}" width="75%" alt="" (mouseover)="FacultyImgMouseOver()"
+          (mouseout)="FacultyImgMouseOut()" (click)="clickFacultyImg()">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  alert("HELLO");
+
+  function student_hover(element) {
+    element.setAttribute('src', '../../assets/images/student_logo_hover.png');
+  }
+
+  function faculty_hover(element) {
+    element.setAttribute('src', '../../assets/images/faculty_logo_hover.png');
+  }
+
+  function student_unhover(element) {
+    element.setAttribute('src', '../../assets/images/student_logo.png');
+  }
+
+  function faculty_unhover(element) {
+    element.setAttribute('src', '../../assets/images/faculty_logo.png');
+  }
+
+</script>

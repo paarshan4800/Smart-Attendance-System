@@ -1,0 +1,65 @@
+.fillDetails {
+  padding: 1% 0%;
+  background-color: grey;
+}
+
+.fillDetailsTitle {
+  font-family: OswaldMedium;
+  font-size: larger;
+  padding: 1% 0%;
+}
+
+.fillDetailsData {
+  font-family: OswalsRegular;
+  font-size: large;
+  padding: 1% 0%;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.showDetails {
+  padding: 1% 0%;
+}
+
+.showDetailsTitle {
+  font-family: OswaldMedium;
+  font-size: larger;
+  padding: 1% 0%;
+  background-color: black;
+  color: white;
+}
+
+.showDetailsData {
+  font-family: OswalsRegular;
+  font-size: large;
+  padding: 1% 0%;
+  background-color: #e6e6e6;
+}
+
+.noClasses {
+  font-size: larger;
+  font-family: OswalsRegular;
+  color: black;
+}
+
+.attendanceMarked{
+  margin-top: 1%;
+}
+
+.clickable{
+  pointer-events: auto;
+}
+
+.notClickable{
+  pointer-events: none;
+  color: pink;
+}
+
+svg{
+  margin: 0% 0.5%;
+}
